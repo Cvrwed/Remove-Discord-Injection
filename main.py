@@ -9,7 +9,7 @@ index_file = "index.js"
 replace_js = "module.exports = require('./core.asar');"
 check_process = subprocess.check_output(["tasklist"]).decode("unicode_escape")
 
-def RemoveStealer():
+def RemoveInjection():
     global path
     global discord_folder
     for folder in os.listdir(path):
